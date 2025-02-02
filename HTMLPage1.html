@@ -1,0 +1,238 @@
+﻿<!-- Introduction -->
+
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <!-- Meta Data-->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Internet Explorer compatibility -->
+    <meta name="description" content="This is a description of the web page"> <!-- Description for search engines -->
+    <meta name="keywords" content="HTML, CSS, JavaScript"> <!-- Keywords for search engines -->
+    <meta name="author" content="Your Name"> <!-- Author name -->
+
+    <link rel="icon" href="D:\favicon-32x32.png" type="image/x-icon">
+    <script src="Script1.js" type="text/javascript"></script>
+
+    <title>Webpage</title>
+    <style>
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+
+        .title {
+            background-color: yellow;
+            color: red;
+        }
+
+        #myid {
+            background-color: yellow;
+        }
+        #myCanvas{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML Basics-->
+
+    <a href="#myid1">Go to myid1</a>
+    <p id="myid">This is a paragraph</p>
+    <h1 class="title">HTML Tutorial <br />for beginners</h1>
+    <hr>
+    <h2 title="hello , motto" class="title">Title Attribute</h2>
+    <h3 id="myid1"> Gardening tips</h3>
+    <p>This section is for gardening tips</p>
+    <img src="C:\Users\Muhammad Moeen Khan\Pictures\WhatsApp_files\352308299_543019997857426_5447664580575522244_n.jpg" alt="Gawadar Stadium" width="200" height="200" />
+    <pre>fun i == 0
+print("Hello World")
+</pre>
+
+    <!-- Inline and Block Elements-->
+
+    <span>This is an <strong>important</strong> <em> text</em></span>
+    <span>This is <p>not recommended</p> text.</span>
+
+    <!-- Lists -->
+
+    <h3>Unordered List</h3>
+    <ul type="square">
+        <li>pencil</li>
+        <li>pen</li>
+        <li>eraser</li>
+    </ul>
+    <h3>Ordered List</h3>
+    <ol type="i" start="2">
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Orange</li>
+    </ol>
+    <h3>Definition List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+    <!-- Tables -->
+
+    <h3>Table</h3>
+    <table border="1">
+        <tr>
+            <td colspan="2"> Merged Columns</td>
+        </tr>
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td>Row 1 Column1</td>
+            <td rowspan="2"> Merged Rows</td>
+        </tr>
+        <tr>
+            <td>Row2 Column 1</td>
+        </tr>
+    </table>
+    <table border="1">
+        <caption>Student's Information</caption>
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ali</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hamza</td>
+                <td>$45</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Student's</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Forms -->
+
+    <form action="/submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" placeholder="Enter your name: " autofocus>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter the password: " required>
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male"> Male </label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female"> Female </label>
+        <br>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe"> Subscribe to NewsLetter </label>
+        <br>
+        <textarea name="Comment" rows="4" cols="50">Enter your comments here: </textarea>
+        <br>
+        <select name="Fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Orange</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Html Media-->
+
+    <video src="D:\MOEEN\Doraemon-Nobita-And-The-Island-Of-Miracles-2012-Hindi-Dubbed-Movie--480p-[Orgmovies].mp4" controls></video>
+    <br />
+    <audio src="D:\MOEEN\WhatsApp Documents\Coke Studio _ Season 14 _ Pasoori _ Ali Sethi x Shae Gill.mp3" controls></audio>
+    <br />
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"></circle>
+    </svg>
+    <br />
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="1" allowfullscreen></iframe>
+    <br />
+    <iframe src="https://maps.google.com/maps?q=LOCATION&output=embed" frameborder="1"></iframe>
+
+    <!-- Miscellaneous Tags-->
+
+    <h2> C Code Snippet</h2>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+        int main() {
+        printf("Hello World");
+        return 0;
+        }
+    </code></pre>
+    <br>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul type="square">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Address</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h2>Article Title</h2>
+        <section>
+            <p>Content Here</p>
+        </section>
+    </article>
+    <aside>
+        <p>This is an aside content</p>
+    </aside>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Address</li>
+        </ul>
+    </nav>
+    <br />
+    <figure>
+        <img src="C:\Users\Muhammad Moeen Khan\Pictures\WhatsApp_files\352308299_543019997857426_5447664580575522244_n.jpg" />
+        <figcaption>Gawadar Stadium</figcaption>
+    </figure>
+    <br />
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <div data-user="123">Custom Data</div>
+    <br />
+    <p>The price 10 &lt; 20.</p>
+    <p>Copyright &copy; 2023.</p>
+    <p>This is an example&nbsp;text.</p>
+    <br />
+    <blockquote cite="https://example.com">
+        This is a long quote from an external source. This code can span multiple lines and paragraphs.
+    </blockquote>
+    <br />
+    The philosopher said, <q cite="https://example.com">The unexampined life is not worth living.</q>
+    <br />
+    <font color="red" size="3" face="verdana">This is some text</font>
+    <br />
+    <center>This text will be centered</center>
+    <br />
+    <u>This text will be underlined</u>
+    <br />
+    <span style="color:red; font-size:16px; font-family:verdana;">This is some text</span>
+    <br />
+    <div style="text-align:center;">This text will be centered</div>
+    <br />
+    <span style="text-decoration:underline;">This text will be underlined</span>
+</body>
+</html>
